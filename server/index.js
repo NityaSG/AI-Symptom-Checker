@@ -164,5 +164,5 @@ app.post("/completions", async (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Example app ready`)
+    console.log(`app ready`)
 });

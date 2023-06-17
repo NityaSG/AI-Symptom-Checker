@@ -32,7 +32,7 @@ const SignUp = () => {
 
     try {
       dispatch({ type: AUTH, data: { result, token } });
-      const response = await fetch("http://localhost:3000/api/oauth", {
+      const response = await fetch("https://thinkromanaiservices.onrender.com/api/oauth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

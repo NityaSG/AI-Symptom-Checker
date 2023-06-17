@@ -50,7 +50,7 @@ const ChatProvider = ({children}) => {
     const inputToEmbedd = `\nStudent: ${input}`;
 
     // handle completions
-    const response = await fetch("http://localhost:3000/completions", {
+    const response = await fetch("https://thinkromanaiservices.onrender.com/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
