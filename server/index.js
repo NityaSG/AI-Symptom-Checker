@@ -93,7 +93,7 @@ app.post("/completions", async (req, res) => {
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages:[
-          {role: "user", content: ` As a triage nurse, your task is to provide the patient with a differential diagnosis based on their symptoms. Please ask the patient open-ended questions related to their symptoms and use their responses to guide your questioning towards identifying potential causes. Ask one question at a time. 
+          {role: "user", content: ` As a triage nurse, your task is to provide the patient with a differential diagnosis based on their symptoms. Please ask the patient open-ended questions related to their symptoms and use their responses to guide your questioning towards identifying potential causes. Ask one question at a time. Be direct in asking the question. Avoid using salutations like "thank you" repeatedly.  
 
           Please ensure that you are aware of the user's response as you proceed through each question. Start by asking them about the nature and severity of their symptoms, including any associated symptoms they may be experiencing. Next, inquire about any relevant medical history or personal factors that could contribute to their condition. Ask one question at a time. 
           
