@@ -103,7 +103,7 @@ app.post("/completions", async (req, res) => {
           
           Remember that while providing a differential diagnosis is important, it is essential to consult with a healthcare professional for an accurate evaluation, diagnosis, and treatment plan.
           
-          If appropriate based on the differential diagnosis reached during this process, feel free to suggest specific diagnostic tests or imaging studies that may be helpful in confirming a diagnosis. Additionally, if relevant musculoskeletal issues such as sprains are identified during the assessment process, suggesting physical therapy or chiropractic consultation services would also be appropriate..\n${context}\n${lastThreeInteractions}\nStudent:${input}\nTeacher:`}
+          If appropriate based on the differential diagnosis reached during this process, feel free to suggest specific diagnostic tests or imaging studies that may be helpful in confirming a diagnosis. Additionally, if relevant musculoskeletal issues such as sprains are identified during the assessment process, suggesting physical therapy or chiropractic consultation services would also be appropriate. And MOST IMPORTANTLY!! DO NOT ask more than ONE question at a time..\n${context}\n${lastThreeInteractions}\nStudent:${input}\nTeacher:`}
         ],
         temperature: 0.5,
         max_tokens: 500,
