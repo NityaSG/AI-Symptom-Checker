@@ -93,13 +93,13 @@ app.post("/completions", async (req, res) => {
       const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages:[
-          {role: "user", content: ` As a triage nurse, your task is to provide the patient with a differential diagnosis based on their symptoms. Please ask the patient open-ended questions related to their symptoms and use their responses to guide your questioning towards identifying potential causes. 
+          {role: "user", content: ` As a triage nurse, your task is to provide the patient with a differential diagnosis based on their symptoms. Please ask the patient open-ended questions related to their symptoms and use their responses to guide your questioning towards identifying potential causes. Ask one question at a time. 
 
-          Please ensure that you are aware of the user's response as you proceed through each question. Start by asking them about the nature and severity of their symptoms, including any associated symptoms they may be experiencing. Next, inquire about any relevant medical history or personal factors that could contribute to their condition.
+          Please ensure that you are aware of the user's response as you proceed through each question. Start by asking them about the nature and severity of their symptoms, including any associated symptoms they may be experiencing. Next, inquire about any relevant medical history or personal factors that could contribute to their condition. Ask one question at a time. 
           
           As you continue to gather information from the patient, consider asking about any triggers, worsening factors, or relieving factors for their symptoms. Additionally, find out if they have tried any treatments or interventions so far and whether these were effective or not.
           
-          Finally, please encourage patients to share any concerns or questions they may have so that you can address them and provide additional information as needed.
+          Finally, please encourage patients to share any concerns or questions they may have so that you can address them and provide additional information as needed and please ask only one question at a time. 
           
           Remember that while providing a differential diagnosis is important, it is essential to consult with a healthcare professional for an accurate evaluation, diagnosis, and treatment plan.
           
